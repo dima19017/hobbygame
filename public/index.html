@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Устанавливаем метаданные: кодировка, настройка для мобил -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple 3D Shooter</title>
   <style>
+  /* убираем отступы и скрываем прокрутку */
     body { margin: 0; overflow: hidden; }
     canvas { display: block; }
   </style>
+  <!-- Используем для импорта модулей -->
   <script type="importmap">
     {
       "imports": {
@@ -16,10 +19,9 @@
       }
     }
   </script>
-  <!-- Подключаем Socket.IO через правильный CDN -->
   <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.0.0/dist/socket.io.min.js"></script>
 </head>
 <body>
-  <script src="main.js" type="module"></script> <!-- Ваш основной скрипт -->
+  <script src="main.js" type="module"></script>
 </body>
 </html>
